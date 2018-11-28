@@ -12,6 +12,9 @@ void print_scene(bool scene[], int _delay) {
 }
 
 void scene_1() {
+  /*
+  Todos apagados uno prendido y va avanzando
+  */
   Serial.println("Scene 1");
   bool _step[count_pins];
   for (int i1=0; i1 < count_pins; i1++) {
@@ -29,6 +32,9 @@ void scene_1() {
 }
 
 void scene_2() {
+  /*
+  Igual que la anterior pero salta de a dos
+  */
   Serial.println("Scene 2");
   bool _step[count_pins];
   for (int i1=0; i1 < count_pins; i1++) {
@@ -46,6 +52,9 @@ void scene_2() {
 }
 
 void scene_3() {
+  /*
+    Prende y apaga de forma random
+  */
   Serial.println("Scene 3");
   bool _step[count_pins];
   int rand_value;
